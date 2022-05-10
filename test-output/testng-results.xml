@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-08T21:07:48 IST" name="ZenfraAutomationTest" finished-at="2022-05-08T21:10:11 IST" duration-ms="142468">
+    <groups>
+    </groups>
+    <test started-at="2022-05-08T21:07:48 IST" name="ZenfraAutomationTest" finished-at="2022-05-08T21:10:11 IST" duration-ms="142468">
+      <class name="com.zenfradashboard.testcases.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.zenfradashboard.testcases.LoginPageTest@18d87d80]" started-at="2022-05-08T21:07:48 IST" name="setUp" finished-at="2022-05-08T21:07:56 IST" duration-ms="7435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:0, instance:com.zenfradashboard.testcases.LoginPageTest@18d87d80]" started-at="2022-05-08T21:07:56 IST" name="loginTest" finished-at="2022-05-08T21:08:11 IST" duration-ms="15742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenfradashboard.testcases.LoginPageTest@18d87d80]" started-at="2022-05-08T21:08:11 IST" name="tearDown" finished-at="2022-05-08T21:08:12 IST" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zenfradashboard.testcases.LoginPageTest -->
+      <class name="com.zenfradashboard.testcases.DashboardTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.zenfradashboard.testcases.DashboardTest@47e2e487]" started-at="2022-05-08T21:08:57 IST" name="setUp" finished-at="2022-05-08T21:09:19 IST" duration-ms="21792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyaddChart()[pri:1, instance:com.zenfradashboard.testcases.DashboardTest@47e2e487]" started-at="2022-05-08T21:09:19 IST" name="verifyaddChart" finished-at="2022-05-08T21:09:20 IST" duration-ms="1493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyaddChart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenfradashboard.testcases.DashboardTest@47e2e487]" started-at="2022-05-08T21:09:20 IST" name="tearDown" finished-at="2022-05-08T21:09:21 IST" duration-ms="427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.zenfradashboard.testcases.DashboardTest@47e2e487]" started-at="2022-05-08T21:09:21 IST" name="setUp" finished-at="2022-05-08T21:09:43 IST" duration-ms="22901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRemoveChart()[pri:2, instance:com.zenfradashboard.testcases.DashboardTest@47e2e487]" started-at="2022-05-08T21:09:43 IST" name="verifyRemoveChart" finished-at="2022-05-08T21:09:44 IST" duration-ms="848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRemoveChart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenfradashboard.testcases.DashboardTest@47e2e487]" started-at="2022-05-08T21:09:44 IST" name="tearDown" finished-at="2022-05-08T21:09:45 IST" duration-ms="598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.zenfradashboard.testcases.DashboardTest@47e2e487]" started-at="2022-05-08T21:09:45 IST" name="setUp" finished-at="2022-05-08T21:10:08 IST" duration-ms="23553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAddChartCancel()[pri:3, instance:com.zenfradashboard.testcases.DashboardTest@47e2e487]" started-at="2022-05-08T21:10:08 IST" name="verifyAddChartCancel" finished-at="2022-05-08T21:10:10 IST" duration-ms="1805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddChartCancel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenfradashboard.testcases.DashboardTest@47e2e487]" started-at="2022-05-08T21:10:10 IST" name="tearDown" finished-at="2022-05-08T21:10:11 IST" duration-ms="486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zenfradashboard.testcases.DashboardTest -->
+      <class name="com.zenfradashboard.testcases.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.zenfradashboard.testcases.HomePageTest@51e69659]" started-at="2022-05-08T21:08:12 IST" name="setUp" finished-at="2022-05-08T21:08:33 IST" duration-ms="21482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageIconsTest()[pri:1, instance:com.zenfradashboard.testcases.HomePageTest@51e69659]" started-at="2022-05-08T21:08:33 IST" name="verifyHomePageIconsTest" finished-at="2022-05-08T21:08:34 IST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageIconsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenfradashboard.testcases.HomePageTest@51e69659]" started-at="2022-05-08T21:08:34 IST" name="tearDown" finished-at="2022-05-08T21:08:34 IST" duration-ms="580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.zenfradashboard.testcases.HomePageTest@51e69659]" started-at="2022-05-08T21:08:34 IST" name="setUp" finished-at="2022-05-08T21:08:56 IST" duration-ms="22052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="selectDashboard()[pri:2, instance:com.zenfradashboard.testcases.HomePageTest@51e69659]" started-at="2022-05-08T21:08:56 IST" name="selectDashboard" finished-at="2022-05-08T21:08:56 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectDashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenfradashboard.testcases.HomePageTest@51e69659]" started-at="2022-05-08T21:08:56 IST" name="tearDown" finished-at="2022-05-08T21:08:57 IST" duration-ms="659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zenfradashboard.testcases.HomePageTest -->
+    </test> <!-- ZenfraAutomationTest -->
+  </suite> <!-- ZenfraAutomationTest -->
+</testng-results>

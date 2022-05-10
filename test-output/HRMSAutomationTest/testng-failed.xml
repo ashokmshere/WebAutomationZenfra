@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HRMSAutomationTest]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.hrms.ExtendReportListener.ExtentReporterNG"/>
+    <listener class-name="com.hrms.util.ListenerTest"/>
+  </listeners>
+  <test thread-count="5" name="HRMSAutomationTest(failed)">
+    <classes>
+      <class name="com.hrmshrisreports.testcases.RStandHRISEndOfContractTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyDownloadClose"/>
+        </methods>
+      </class> <!-- com.hrmshrisreports.testcases.RStandHRISEndOfContractTest -->
+      <class name="com.hrmshrisreports.testcases.RStandHRISApplyResignationTest">
+        <methods>
+          <include name="verifyDownloadClose"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.hrmshrisreports.testcases.RStandHRISApplyResignationTest -->
+      <class name="com.hrmshrisreports.testcases.RStandHRISCOEResignationTest">
+        <methods>
+          <include name="verifyDownloadClose"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.hrmshrisreports.testcases.RStandHRISCOEResignationTest -->
+      <class name="com.hrmshrisreports.testcases.RStandTKTimeCardListTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="downloadExcel"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.hrmshrisreports.testcases.RStandTKTimeCardListTest -->
+      <class name="com.hrmshrisreports.testcases.RStandTKLeaveSummaryTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyDownload"/>
+        </methods>
+      </class> <!-- com.hrmshrisreports.testcases.RStandTKLeaveSummaryTest -->
+      <class name="com.hrmshrisreports.testcases.RStandPayDetailedPayrollRegisterTest">
+        <methods>
+          <include name="verifyDownloadWeekly"/>
+          <include name="verifyDownloadBiMonthly"/>
+          <include name="verifyDownloadWeeklyPdf"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.hrmshrisreports.testcases.RStandPayDetailedPayrollRegisterTest -->
+      <class name="com.hrmshrisreports.testcases.RStandHRISYearOfServiceTest">
+        <methods>
+          <include name="verifyDownloadExcel"/>
+          <include name="setUp"/>
+          <include name="verifyDownloadClose"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.hrmshrisreports.testcases.RStandHRISYearOfServiceTest -->
+      <class name="com.hrmshrisreports.testcases.RStandTKShiftTest">
+        <methods>
+          <include name="downloadClose"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.hrmshrisreports.testcases.RStandTKShiftTest -->
+      <class name="com.hrmshrisreports.testcases.RStandHRLettersTest">
+        <methods>
+          <include name="hrLettersSend"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.hrmshrisreports.testcases.RStandHRLettersTest -->
+      <class name="com.hrmshrisreports.testcases.RStandPayDeductionRegisterTest">
+        <methods>
+          <include name="verifyDownloadBiMonthly"/>
+          <include name="verifyDownloadWeekly"/>
+          <include name="verifyDownloadMonDeduAll"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.hrmshrisreports.testcases.RStandPayDeductionRegisterTest -->
+      <class name="com.hrmshrisreports.testcases.RStandHRISRetirableTest">
+        <methods>
+          <include name="verifyDownloadClose"/>
+          <include name="tearDown"/>
+          <include name="verifyDownloadExcel"/>
+          <include name="setUp"/>
+          <include name="verifyDownloadPdf"/>
+        </methods>
+      </class> <!-- com.hrmshrisreports.testcases.RStandHRISRetirableTest -->
+      <class name="com.hrmshrisreports.testcases.RStandHRISPromotionPerMonthTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyDownloadExcel"/>
+          <include name="verifyDownloadClose"/>
+          <include name="verifyDownloadPdf"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.hrmshrisreports.testcases.RStandHRISPromotionPerMonthTest -->
+      <class name="com.hrmshrisreports.testcases.RStandHRISEmployeeMovementTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyDownloadExcelTypeRedesignation"/>
+          <include name="setUp"/>
+          <include name="verifyDownloadPdf"/>
+          <include name="verifyDownloadClose"/>
+        </methods>
+      </class> <!-- com.hrmshrisreports.testcases.RStandHRISEmployeeMovementTest -->
+      <class name="com.hrmshrisreports.testcases.RStandHRISExitInterviewTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyDownloadClose"/>
+        </methods>
+      </class> <!-- com.hrmshrisreports.testcases.RStandHRISExitInterviewTest -->
+      <class name="com.hrmshrisreports.testcases.RStandPayIncomeRegisterTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyDownloadBiMonthly"/>
+          <include name="verifyDownloadWeekly"/>
+          <include name="setUp"/>
+          <include name="verifyDownloadWeeklyPdf"/>
+        </methods>
+      </class> <!-- com.hrmshrisreports.testcases.RStandPayIncomeRegisterTest -->
+    </classes>
+  </test> <!-- HRMSAutomationTest(failed) -->
+</suite> <!-- Failed suite [HRMSAutomationTest] -->
