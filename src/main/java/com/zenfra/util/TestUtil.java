@@ -24,8 +24,8 @@ import com.zenfra.base.TestBase;
 
 public class TestUtil extends TestBase {
 	
-	public static long PAGE_LOAD_TIMEOUT = 50;
-	public static long IMPLICIT_WAIT = 50;
+	public static long PAGE_LOAD_TIMEOUT = 30;
+	public static long IMPLICIT_WAIT = 30;
 	
 	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir")+"/src/main/java/com/thinknumbers/testdata/ThinkNumbersTestData.xlsx";
 
