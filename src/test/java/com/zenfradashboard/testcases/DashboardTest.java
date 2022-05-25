@@ -41,28 +41,33 @@ public class DashboardTest extends TestBase {
 	}
 
 	@Test(priority = 2)
-	public void verifyRemoveChart() throws InterruptedException {
-
-		dashboard.removeChart();
-
-	}
-
-	@Test(priority = 3)
 	public void verifyAddChartCancel() throws InterruptedException {
 
 		dashboard.addChartCancelButton();
 
 	}
 
-	@Test(priority = 4)
-	public void exportToPDF() {
+	@Test(priority = 3)
+	public void exportToPDF() throws InterruptedException {
 		dashboard.exportTOPDF();
+	}
+
+	@Test(priority = 4)
+	public void exportTOPPTX() throws InterruptedException {
+		dashboard.exportTOPPTX();
+	}
+
+	@Test(priority = 5)
+	public void verifyRemoveChart() throws InterruptedException {
+
+		dashboard.removeChart();
+
 	}
 
 	@AfterTest
 	public void tearDown() {
-		driver.close();
-		driver.quit();
+	//	driver.close();
+	//	driver.quit();
 	}
 
 }

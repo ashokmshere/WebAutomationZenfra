@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-ZenfraAutomationTest" class="navigator-link">
-              <span class="suite-name border-failed">ZenfraAutomationTest</span>
+              <span class="suite-name border-passed">ZenfraAutomationTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,36 +93,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 4 failed,   </span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-ZenfraAutomationTest" class="hide-methods failed suite-ZenfraAutomationTest"> (hide)</a> <!-- hide-methods failed suite-ZenfraAutomationTest -->
-                      <a href="#" panel-name="suite-ZenfraAutomationTest" class="show-methods failed suite-ZenfraAutomationTest"> (show)</a> <!-- show-methods failed suite-ZenfraAutomationTest -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-ZenfraAutomationTest" class="hide-methods passed suite-ZenfraAutomationTest"> (hide)</a> <!-- hide-methods passed suite-ZenfraAutomationTest -->
+                      <a href="#" panel-name="suite-ZenfraAutomationTest" class="show-methods passed suite-ZenfraAutomationTest"> (show)</a> <!-- show-methods passed suite-ZenfraAutomationTest -->
                     </span>
-                    <div class="method-list-content failed suite-ZenfraAutomationTest">
+                    <div class="method-list-content passed suite-ZenfraAutomationTest">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ZenfraAutomationTest" title="com.zenfradashboard.testcases.DashboardTest" class="method navigator-link" hash-for-method="exportTOPPTX">exportTOPPTX</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-ZenfraAutomationTest" title="com.zenfradashboard.testcases.DashboardTest" class="method navigator-link" hash-for-method="exportToPDF">exportToPDF</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-ZenfraAutomationTest" title="com.zenfradashboard.testcases.DashboardTest" class="method navigator-link" hash-for-method="verifyAddChartCancel">verifyAddChartCancel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-ZenfraAutomationTest" title="com.zenfradashboard.testcases.DashboardTest" class="method navigator-link" hash-for-method="verifyRemoveChart">verifyRemoveChart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-ZenfraAutomationTest" title="com.zenfradashboard.testcases.DashboardTest" class="method navigator-link" hash-for-method="verifyaddChart">verifyaddChart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-ZenfraAutomationTest -->
+                    </div> <!-- method-list-content passed suite-ZenfraAutomationTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -134,47 +139,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ZenfraAutomationTest" class="panel ZenfraAutomationTest">
-          <div class="suite-ZenfraAutomationTest-class-failed">
+          <div class="suite-ZenfraAutomationTest-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.zenfradashboard.testcases.DashboardTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="exportTOPPTX">
+                  </a> <!-- exportTOPPTX -->
+                  <span class="method-name">exportTOPPTX</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="exportToPDF">
                   </a> <!-- exportToPDF -->
                   <span class="method-name">exportToPDF</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;export-btn pdf-icon btn dash-pdf-icon&apos;]&quot;}
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ALEXJENCY&apos;, ip: &apos;192.168.43.253&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MICHAE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54209}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c9f762f9f6e06274d1138d46dff54cd
-*** Element info: {Using=xpath, value=//button[@class=&apos;export-btn pdf-icon btn dash-pdf-icon&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at com.zenfra.dashboard.Dashboard.exportTOPDF(Dashboard.java:106)
-	at com.zenfradashboard.testcases.DashboardTest.exportToPDF(DashboardTest.java:60)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -182,31 +164,6 @@ Session ID: 0c9f762f9f6e06274d1138d46dff54cd
                   <a name="verifyAddChartCancel">
                   </a> <!-- verifyAddChartCancel -->
                   <span class="method-name">verifyAddChartCancel</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-success margin-right-15&quot;&gt;...&lt;/button&gt; is not clickable at point (1283, 68). Other element would receive the click: &lt;div class=&quot;row add-fav-header dashboard-title&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=101.0.4951.67)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ALEXJENCY&apos;, ip: &apos;192.168.43.253&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MICHAE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54209}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c9f762f9f6e06274d1138d46dff54cd
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at com.zenfra.dashboard.Dashboard.addChartCancelButton(Dashboard.java:96)
-	at com.zenfradashboard.testcases.DashboardTest.verifyAddChartCancel(DashboardTest.java:54)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -214,36 +171,6 @@ Session ID: 0c9f762f9f6e06274d1138d46dff54cd
                   <a name="verifyRemoveChart">
                   </a> <!-- verifyRemoveChart -->
                   <span class="method-name">verifyRemoveChart</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;btn btn-secondary btn-medium radius-btn&apos;]&quot;}
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ALEXJENCY&apos;, ip: &apos;192.168.43.253&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MICHAE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54209}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c9f762f9f6e06274d1138d46dff54cd
-*** Element info: {Using=xpath, value=//button[@class=&apos;btn btn-secondary btn-medium radius-btn&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at com.zenfra.dashboard.Dashboard.removeChart(Dashboard.java:87)
-	at com.zenfradashboard.testcases.DashboardTest.verifyRemoveChart(DashboardTest.java:47)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -251,40 +178,10 @@ Session ID: 0c9f762f9f6e06274d1138d46dff54cd
                   <a name="verifyaddChart">
                   </a> <!-- verifyaddChart -->
                   <span class="method-name">verifyaddChart</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Linux HBA&apos;]&quot;}
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ALEXJENCY&apos;, ip: &apos;192.168.43.253&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MICHAE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54209}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c9f762f9f6e06274d1138d46dff54cd
-*** Element info: {Using=xpath, value=//span[text()=&apos;Linux HBA&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at com.zenfra.dashboard.Dashboard.addChart(Dashboard.java:75)
-	at com.zenfradashboard.testcases.DashboardTest.verifyaddChart(DashboardTest.java:40)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ZenfraAutomationTest-class-failed -->
+          </div> <!-- suite-ZenfraAutomationTest-class-passed -->
         </div> <!-- panel ZenfraAutomationTest -->
         <div panel-name="test-xml-ZenfraAutomationTest" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -341,28 +238,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyaddChart')
+data.setCell(0, 1, 'exportToPDF')
 data.setCell(0, 2, 'com.zenfradashboard.testcases.DashboardTest')
-data.setCell(0, 3, 30698);
+data.setCell(0, 3, 114215);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyRemoveChart')
+data.setCell(1, 1, 'exportTOPPTX')
 data.setCell(1, 2, 'com.zenfradashboard.testcases.DashboardTest')
-data.setCell(1, 3, 30091);
+data.setCell(1, 3, 104747);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'exportToPDF')
+data.setCell(2, 1, 'verifyAddChartCancel')
 data.setCell(2, 2, 'com.zenfradashboard.testcases.DashboardTest')
-data.setCell(2, 3, 30047);
+data.setCell(2, 3, 67178);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyAddChartCancel')
+data.setCell(3, 1, 'verifyaddChart')
 data.setCell(3, 2, 'com.zenfradashboard.testcases.DashboardTest')
-data.setCell(3, 3, 1148);
+data.setCell(3, 3, 53332);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyRemoveChart')
+data.setCell(4, 2, 'com.zenfradashboard.testcases.DashboardTest')
+data.setCell(4, 3, 2324);
 window.suiteTableData['ZenfraAutomationTest']= { tableData: data, tableDiv: 'times-div-ZenfraAutomationTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-ZenfraAutomationTest">
               </div> <!-- times-div-ZenfraAutomationTest -->
             </div> <!-- times-div -->
@@ -395,47 +296,47 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">moveToHome</span>
-                <span class="method-start">34583 ms</span>
+                <span class="method-start">19412 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyaddChart</span>
-                <span class="method-start">34836 ms</span>
+                <span class="method-start">19543 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">moveToHome</span>
-                <span class="method-start">65771 ms</span>
+                <span class="method-start">72886 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyRemoveChart</span>
-                <span class="method-start">65880 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">moveToHome</span>
-                <span class="method-start">96173 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyAddChartCancel</span>
-                <span class="method-start">96248 ms</span>
+                <span class="method-start">73153 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">moveToHome</span>
-                <span class="method-start">97571 ms</span>
+                <span class="method-start">140334 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">exportToPDF</span>
-                <span class="method-start">97632 ms</span>
+                <span class="method-start">140528 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">moveToHome</span>
+                <span class="method-start">254746 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exportTOPPTX</span>
+                <span class="method-start">254939 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">moveToHome</span>
+                <span class="method-start">359689 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRemoveChart</span>
+                <span class="method-start">359889 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">127837 ms</span>
+                <span class="method-start">362217 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

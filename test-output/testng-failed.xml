@@ -11,10 +11,8 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyRemoveChart"/>
           <include name="moveToHome"/>
-          <include name="verifyAddChartCancel"/>
-          <include name="verifyaddChart"/>
+          <include name="exportTOPPTX"/>
           <include name="exportToPDF"/>
         </methods>
       </class> <!-- com.zenfradashboard.testcases.DashboardTest -->

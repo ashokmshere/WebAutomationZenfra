@@ -11,9 +11,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.zenfra.base.TestBase;
+import com.zenfra.util.TestUtil;
 
 public class LoginPage extends TestBase{
-	
+	TestUtil testUtilObject;
 	//Page Factory - OR:
 	
 	@FindBy(xpath="//*[@id='userName']")
@@ -36,10 +37,12 @@ public class LoginPage extends TestBase{
 	@FindBy(className="s-alert-box-inner")
 	WebElement innerErroMessage;
 	
-	
+	@FindBy(xpath = "//div[contains(text(), 'is loading...')]")
+	WebElement loadingIcon;
 	
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
+		 testUtilObject = new TestUtil();
 	}
 	
 	public AzenfraHome Login(String un, String pwd) throws InterruptedException {
@@ -47,11 +50,11 @@ public class LoginPage extends TestBase{
 		password.sendKeys(pwd);
 		Thread.sleep(100);
 		loginBtn.click();
-		Thread.sleep(3000);
+		testUtilObject.waitforElementDisappear(loadingIcon);
 		String parent=driver.getWindowHandle();
 		System.out.println(parent);
-		Thread.sleep(3000);
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
+		//Thread.sleep(3000);
 		Set<String>s=driver.getWindowHandles();
 		// Now iterate using Iterator
 		Iterator<String> I1= s.iterator();
@@ -69,7 +72,7 @@ public class LoginPage extends TestBase{
 		
 		}
 
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		return new AzenfraHome();
 	}
 	public void lockAccount(String un) {

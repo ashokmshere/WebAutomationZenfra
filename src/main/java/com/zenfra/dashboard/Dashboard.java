@@ -1,6 +1,7 @@
 package com.zenfra.dashboard;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -10,16 +11,17 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.zenfra.base.TestBase;
+import com.zenfra.util.TestUtil;
 
 public class Dashboard extends TestBase {
-
+	TestUtil testUtilObject;
 	
 	// Page Factory - OR:
 
 	@FindBy(xpath = "//*[@id='logo']")
 	WebElement logo;
 
-	@FindBy(xpath = "//*[@class='btn btn-success margin-right-15']")
+	@FindBy(xpath = "//button[text()='Add Chart ']")
 	WebElement addChart;
 
 	@FindBy(xpath = "//span[text()='Discovery']")
@@ -28,11 +30,15 @@ public class Dashboard extends TestBase {
 	@FindBy(xpath = "//span[text()='All']")
 	WebElement categoryAll;
 
-	@FindBy(xpath = "//span[text()='Linux HBA']")
+	//@FindBy(xpath = "//span[text()='Linux HBA']")
+	@FindBy(xpath = "//span[text()='VMAX Server']")
 	WebElement favoriteViewLinuxHBA;
 
 	@FindBy(xpath = "//span[text()='Server vs OS version']")
 	WebElement chartServervsOSversion;
+	
+	@FindBy(id = "check-al")
+	WebElement chartAll;
 
 	@FindBy(xpath = "//button[@class='btn btn-success']")
 	WebElement addToDashboard;
@@ -48,32 +54,51 @@ public class Dashboard extends TestBase {
 
 	@FindBy(xpath = "//button[@class='btn btn-secondary btn-medium radius-btn']")
 	WebElement removeChart;
+	
 	@FindBy(xpath = "//button[@class='export-btn pdf-icon btn dash-pdf-icon']")
 	WebElement exportToPDF;
+	@FindBy(xpath = "//button[@class='export-btn btn dash-pdf-icon']")
+	WebElement exportToPPTX;
+	
 	@FindBy(xpath = "//div[@class='s-alert-box-inner']")
 	WebElement messageBox;
+	
 	@FindBy(xpath = "//a[@href='/dashboard']")
 	WebElement dashBoard;
+	
 	@FindBys(@FindBy(xpath="//a[@href='/dashboard']"))
 	List<WebElement> dashBoardElements;
+	
+	@FindBy(className="addwidget-btn-right")
+	WebElement loadingWidget;
+	
+
+	@FindBy(xpath = "//div[contains(text(), 'is loading...')]")
+	WebElement loadingIcon;
+	By xpathloadingIcon = By.xpath("//div[contains(text(), 'is loading...')]");
+	
 
 	public Dashboard() {
 		PageFactory.initElements(driver, this);
+		 testUtilObject = new TestUtil();
 	}
 
 	public void navigateToDashboard() {
 		if (dashBoardElements.size() > 0 ) {
-			dashBoard.click();
+			logo.click();
 		}
 	}
 
 	public void addChart() throws InterruptedException {
+		testUtilObject.waitforElementDisappearByLocator(xpathloadingIcon);
 		logo.click();
+		testUtilObject.waitforElementDisappearByLocator(xpathloadingIcon);
 		addChart.click();
 		analyticsTypediscovery.click();
 		categoryAll.click();
 		favoriteViewLinuxHBA.click();
-		chartServervsOSversion.click();
+		//chartServervsOSversion.click();
+		chartAll.click();
 		addToDashboard.click();
 
 		String success = addMsg.getText();
@@ -92,19 +117,34 @@ public class Dashboard extends TestBase {
 	}
 
 	public void addChartCancelButton() throws InterruptedException {
+		testUtilObject.waitforElementDisappearByLocator(xpathloadingIcon);
 		logo.click();
+		testUtilObject.waitforElementDisappearByLocator(xpathloadingIcon);
+		testUtilObject.waitforElementClickable(addChart);
 		addChart.click();
 		analyticsTypediscovery.click();
 		categoryAll.click();
 		favoriteViewLinuxHBA.click();
-		chartServervsOSversion.click();
+		//chartServervsOSversion.click();
 		addToChartCancel.click();
 
 	}
 
-	public void exportTOPDF() {
+	public void exportTOPDF() throws InterruptedException {
+		testUtilObject.waitforElementDisappearByLocator(xpathloadingIcon);
+		testUtilObject.waitforElementClickable(exportToPDF);
 		exportToPDF.click();
+		//testUtilObject.waitforElementDisappear(loadingWidget);
 		Assert.assertEquals("PDF exported successfully", messageBox.getText());
+		testUtilObject.waitforElementDisappear(messageBox);
+	}
+	public void exportTOPPTX() throws InterruptedException {
+		testUtilObject.waitforElementDisappearByLocator(xpathloadingIcon);
+		testUtilObject.waitforElementClickable(exportToPPTX);
+		exportToPPTX.click();
+		//testUtilObject.waitforElementDisappear(loadingWidget);
+		Assert.assertEquals("PPTX exported successfully", messageBox.getText());
+		testUtilObject.waitforElementDisappear(messageBox);
 	}
 
 }
