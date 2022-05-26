@@ -13,8 +13,9 @@
 
 		<classes>
 			<!-- class name="com.zenfradashboard.testcases.LoginPageTest" / -->
-			<!--class name="com.zenfradashboard.testcases.HomePageTest" /-->
-			<class name="com.zenfradashboard.testcases.DashboardTest" />
+			<!--class name="com.zenfradashboard.testcases.HomePageTest" / -->
+			<!--class name="com.zenfradashboard.testcases.DashboardTest" / -->
+			<class name="com.zenfradashboard.testcases.DiscoveryTest" />
 		</classes>
 
 	</test>

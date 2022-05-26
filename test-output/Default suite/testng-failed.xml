@@ -3,16 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hrmshrisreports.testcases.RStandHRISApplyResignationTest">
+      <class name="com.zenfradashboard.testcases.DiscoveryTest">
         <methods>
-          <include name="verifyDownloadExcel"/>
-          <include name="verifyPageTitleTest"/>
-          <include name="verifyDownloadClose"/>
-          <include name="tearDown"/>
-          <include name="verifyDownloadPdf"/>
+          <include name="verifyReportLoading"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.hrmshrisreports.testcases.RStandHRISApplyResignationTest -->
+      </class> <!-- com.zenfradashboard.testcases.DiscoveryTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

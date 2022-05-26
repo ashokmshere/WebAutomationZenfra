@@ -90,9 +90,9 @@ public class Dashboard extends TestBase {
 	}
 
 	public void addChart() throws InterruptedException {
-		testUtilObject.waitforElementDisappearByLocator(xpathloadingIcon);
+		testUtilObject.waitforLoadingIcon();
 		logo.click();
-		testUtilObject.waitforElementDisappearByLocator(xpathloadingIcon);
+		testUtilObject.waitforLoadingIcon();
 		addChart.click();
 		analyticsTypediscovery.click();
 		categoryAll.click();
@@ -117,9 +117,9 @@ public class Dashboard extends TestBase {
 	}
 
 	public void addChartCancelButton() throws InterruptedException {
-		testUtilObject.waitforElementDisappearByLocator(xpathloadingIcon);
+		testUtilObject.waitforLoadingIcon();
 		logo.click();
-		testUtilObject.waitforElementDisappearByLocator(xpathloadingIcon);
+		testUtilObject.waitforLoadingIcon();
 		testUtilObject.waitforElementClickable(addChart);
 		addChart.click();
 		analyticsTypediscovery.click();
@@ -131,7 +131,7 @@ public class Dashboard extends TestBase {
 	}
 
 	public void exportTOPDF() throws InterruptedException {
-		testUtilObject.waitforElementDisappearByLocator(xpathloadingIcon);
+		testUtilObject.waitforLoadingIcon();
 		testUtilObject.waitforElementClickable(exportToPDF);
 		exportToPDF.click();
 		//testUtilObject.waitforElementDisappear(loadingWidget);
@@ -139,7 +139,7 @@ public class Dashboard extends TestBase {
 		testUtilObject.waitforElementDisappear(messageBox);
 	}
 	public void exportTOPPTX() throws InterruptedException {
-		testUtilObject.waitforElementDisappearByLocator(xpathloadingIcon);
+		testUtilObject.waitforLoadingIcon();
 		testUtilObject.waitforElementClickable(exportToPPTX);
 		exportToPPTX.click();
 		//testUtilObject.waitforElementDisappear(loadingWidget);

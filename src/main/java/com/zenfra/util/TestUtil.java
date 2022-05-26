@@ -150,10 +150,10 @@ public class TestUtil extends TestBase {
 		}
 	}
 
-	public void waitforElementDisappearByLocator(By locator) {
+	public void waitforLoadingIcon() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 30);
-			wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[contains(text(), 'is loading...')]")));
 		} catch (Exception e) {
 
 		}
