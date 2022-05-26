@@ -5,6 +5,8 @@
     <classes>
       <class name="com.zenfradashboard.testcases.DiscoveryTest">
         <methods>
+          <include name="verifyPinnedState"/>
+          <include name="tearDown"/>
           <include name="verifyReportLoading"/>
           <include name="setUp"/>
         </methods>

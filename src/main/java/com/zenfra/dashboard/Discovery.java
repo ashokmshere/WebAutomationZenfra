@@ -1,9 +1,10 @@
 package com.zenfra.dashboard;
 
-import static org.testng.Assert.assertTrue;
+import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
@@ -26,6 +27,8 @@ public class Discovery extends TestBase {
 	@FindBy(id = "reportSection")
 	WebElement discoveryReport;
 
+	@FindBys(@FindBy(xpath="//div[@aria-colindex='1' and contains(@class, 'ag-cell-last-left-pinned')]"))
+	List<WebElement> reportPinnedElements;
 	public Discovery() {
 		PageFactory.initElements(driver, this);
 		testUtilObject = new TestUtil();
@@ -44,6 +47,15 @@ public class Discovery extends TestBase {
 	public void verifyReport() {
 		testUtilObject.waitforElementDisappear(discoveryReport);
 		Assert.assertTrue(discoveryReport.isDisplayed(), "Report verification");
+	}
+	public void verifyPinnedState() {
+		testUtilObject.waitforElementDisappear(discoveryReport);
+		if (reportPinnedElements.size() > 0 ) {
+			Assert.assertTrue(true, "Report first column is pinned");
+		}
+		else {
+			Assert.assertTrue(false, "Report first column is pinned");
+		}
 	}
 
 }

@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\michaelalexm\AppData\Local\Temp\testng-eclipse--1200149431\testng-customsuite.xml</span>
+                    <span>C:\Users\michaelalexm\AppData\Local\Temp\testng-eclipse-1736104745\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.zenfradashboard.testcases.DiscoveryTest" class="method navigator-link" hash-for-method="verifyPinnedState">verifyPinnedState</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.zenfradashboard.testcases.DiscoveryTest" class="method navigator-link" hash-for-method="verifyReportLoading">verifyReportLoading</a> <!-- method navigator-link -->
@@ -127,6 +132,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyPinnedState">
+                  </a> <!-- verifyPinnedState -->
+                  <span class="method-name">verifyPinnedState</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyReportLoading">
                   </a> <!-- verifyReportLoading -->
                   <span class="method-name">verifyReportLoading</span>
@@ -137,7 +149,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\michaelalexm\AppData\Local\Temp\testng-eclipse--1200149431\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\michaelalexm\AppData\Local\Temp\testng-eclipse-1736104745\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,11 +158,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.zenfradashboard.testcases.DiscoveryTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;verifyReportLoading&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.zenfradashboard.testcases.DiscoveryTest --&gt;
+      &lt;class name=&quot;com.zenfradashboard.testcases.DiscoveryTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -190,11 +198,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyReportLoading')
 data.setCell(0, 2, 'com.zenfradashboard.testcases.DiscoveryTest')
-data.setCell(0, 3, 139826);
+data.setCell(0, 3, 137519);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyPinnedState')
+data.setCell(1, 2, 'com.zenfradashboard.testcases.DiscoveryTest')
+data.setCell(1, 3, 30487);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -232,8 +244,16 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyReportLoading</span>
-                <span class="method-start">38325 ms</span>
+                <span class="method-start">31209 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPinnedState</span>
+                <span class="method-start">168735 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">199225 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

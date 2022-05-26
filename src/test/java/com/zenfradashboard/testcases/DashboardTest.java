@@ -66,8 +66,8 @@ public class DashboardTest extends TestBase {
 
 	@AfterTest
 	public void tearDown() {
-	//	driver.close();
-	//	driver.quit();
+		driver.close();
+		driver.quit();
 	}
 
 }
