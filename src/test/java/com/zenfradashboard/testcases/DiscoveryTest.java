@@ -34,6 +34,15 @@ public class DiscoveryTest extends TestBase {
 	public void verifyPinnedState() throws InterruptedException {
 		discovery.verifyPinnedState();
 	}
+	@Test (priority = 3)
+	public void verifyColSortAscending() throws InterruptedException {
+		discovery.verifyAscending();
+	}
+	
+	@Test (priority = 4)
+	public void verifyColSortDecending() throws InterruptedException {
+		discovery.verifyDescending();
+	}
 	@AfterTest
 	public void tearDown() {
 		driver.close();

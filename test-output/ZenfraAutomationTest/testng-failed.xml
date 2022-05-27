@@ -7,15 +7,15 @@
   </listeners>
   <test thread-count="5" name="ZenfraAutomationTest(failed)">
     <classes>
-      <class name="com.zenfradashboard.testcases.DashboardTest">
+      <class name="com.zenfradashboard.testcases.DiscoveryTest">
         <methods>
-          <include name="setUp"/>
+          <include name="verifyPinnedState"/>
+          <include name="verifyColSortAscending"/>
           <include name="tearDown"/>
-          <include name="moveToHome"/>
-          <include name="exportTOPPTX"/>
-          <include name="exportToPDF"/>
+          <include name="verifyReportLoading"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.zenfradashboard.testcases.DashboardTest -->
+      </class> <!-- com.zenfradashboard.testcases.DiscoveryTest -->
     </classes>
   </test> <!-- ZenfraAutomationTest(failed) -->
 </suite> <!-- Failed suite [ZenfraAutomationTest] -->
