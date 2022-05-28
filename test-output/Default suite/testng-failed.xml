@@ -6,8 +6,8 @@
       <class name="com.zenfradashboard.testcases.DiscoveryTest">
         <methods>
           <include name="tearDown"/>
+          <include name="verifyExcelExportOptions"/>
           <include name="setUp"/>
-          <include name="verifyColSortDecending"/>
         </methods>
       </class> <!-- com.zenfradashboard.testcases.DiscoveryTest -->
     </classes>
