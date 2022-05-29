@@ -96,6 +96,16 @@ public class DiscoveryTest extends TestBase {
 	public void addChartUsngWidget() throws InterruptedException {
 		discovery.addChartFromWidget();
 	}
+	@Test(priority = 15)
+	public void exportPDF() throws InterruptedException {
+		discovery.exportToPDF();
+	}
+
+	@Test(priority = 14)
+	public void exportPPPT() throws InterruptedException {
+		discovery.exportToPPTX();
+	}
+
 
 	@AfterTest
 	public void tearDown() {

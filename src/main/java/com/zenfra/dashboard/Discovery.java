@@ -118,6 +118,12 @@ public class Discovery extends TestBase {
 	@FindBy(xpath = "//button[text()='  Save & Close ']")
 	WebElement cancelChart;
 	
+	@FindBy(xpath = "//button[@class = 'export-btn pdf-icon btn sub-rep-exp-sec']")
+	WebElement exportPDF;
+	
+	@FindBy(xpath = "//button[@class = 'export-btn btn sub-rep-exp-sec']")
+	WebElement exportPPT;
+	
 	public Discovery() {
 		PageFactory.initElements(driver, this);
 		testUtilObject = new TestUtil();
@@ -350,6 +356,20 @@ public class Discovery extends TestBase {
 		deleteChart.click();
 	//	addChart.click();
 	//	deleteWidget.click();
+
+	}
+	public void exportToPDF() {
+		exportPDF.click();
+		Assert.assertEquals("PDF exported successfully", messageBox.getText().trim());
+		testUtilObject.waitforElementDisappear(messageBox);
+	
+
+	}
+	public void exportToPPTX() {
+		exportPPT.click();
+		Assert.assertEquals("PPTX exported successfully", messageBox.getText().trim());
+		testUtilObject.waitforElementDisappear(messageBox);
+	
 
 	}
 }
