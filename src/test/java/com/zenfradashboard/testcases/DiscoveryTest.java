@@ -36,6 +36,7 @@ public class DiscoveryTest extends TestBase {
 	public void verifyToatalColmun() throws InterruptedException {
 		discovery.verifyTotalColmun();
 	}
+
 	@Test(priority = 3)
 	public void verifyPinnedState() throws InterruptedException {
 		discovery.verifyPinnedState();
@@ -55,25 +56,50 @@ public class DiscoveryTest extends TestBase {
 	public void verifyFilterRecords() throws InterruptedException {
 		discovery.filerAndVerifyRecord();
 	}
-	
+
 	@Test(priority = 7)
 	public void hideColmunsAndVerify() throws InterruptedException {
 		discovery.hideComuns();
 	}
-	
 
 	@Test(priority = 8)
 	public void verifyExcelExportOptions() throws InterruptedException {
 		discovery.verifyExcelExportOptions();
 	}
+
 	@Test(priority = 9)
-	public void exportDataAsExccel() throws InterruptedException {
+	public void exportDataAsExcel() throws InterruptedException {
 		discovery.downloadAsExcel();
+	}
+
+	@Test(priority = 10, enabled = false)
+	public void verifyAddChartPopup() throws InterruptedException {
+		discovery.navigateToAddchartWindow();
+	}
+
+	@Test(priority = 11, enabled = false)
+	public void createChart() throws InterruptedException {
+		discovery.AddchartWindow();
+	}
+
+	@Test(priority = 12)
+	public void removeChart() throws InterruptedException {
+		discovery.removeChart();
+	}
+
+	@Test(priority = 13)
+	public void verifyWidget() throws InterruptedException {
+		discovery.verifyPickWidget();
+	}
+
+	@Test(priority = 14)
+	public void addChartUsngWidget() throws InterruptedException {
+		discovery.addChartFromWidget();
 	}
 
 	@AfterTest
 	public void tearDown() {
-		driver.close();
-		driver.quit();
+		// driver.close();
+		// driver.quit();
 	}
 }

@@ -5,8 +5,8 @@
     <classes>
       <class name="com.zenfradashboard.testcases.DiscoveryTest">
         <methods>
+          <include name="verifyWidget"/>
           <include name="tearDown"/>
-          <include name="verifyExcelExportOptions"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.zenfradashboard.testcases.DiscoveryTest -->
