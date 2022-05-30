@@ -19,6 +19,8 @@ import com.zenfra.util.TestUtil;
 
 public class Discovery extends TestBase {
 	TestUtil testUtilObject;
+	public String colName;
+	List<WebElement> sortColumn;
 
 	@FindBy(xpath = "//*[@id='logo']")
 	WebElement logo;
@@ -42,8 +44,8 @@ public class Discovery extends TestBase {
 	List<WebElement> reportPinnedElements;
 
 //	@FindBys(@FindBy(xpath = "//div[@role='row']/div[@col-id='Initiator Name']"))
-	@FindBys(@FindBy(xpath = "//div[@role='row']/div[@col-id='Host Group']"))
-	List<WebElement> sortColumn;
+//	@FindBys(@FindBy(xpath = "//div[@role='row']/div[@col-id='Host Group']"))
+//	List<WebElement> sortColumn;
 
 	// @FindBy(xpath = "//span[@class='ag-header-cell-text' and text()='Initiator
 	// Name' and @ref='eText']")
@@ -79,51 +81,49 @@ public class Discovery extends TestBase {
 
 	@FindBy(xpath = "//div[@class='pull-right']/button[@class='btn btn-primary']")
 	WebElement popupAddChart;
-	
+
 	@FindBys(@FindBy(xpath = "//label[text()='Chart Name']"))
 	List<WebElement> labelChartName;
-	
+
 	@FindBy(xpath = "//input[contains(@class, 'react-inputs-validation__textbox__input')]")
 	WebElement chartName;
-	
+
 	@FindBy(xpath = "//label[@for='xaxis']/following::div/div")
 	WebElement selectXaxis;
-	
+
 	@FindBy(xpath = "//label[@for='yaxis']/following::div/*/div[contains(@class, 'react-select__placeholder')]")
 	WebElement selectYaxis;
-	
+
 	@FindBy(xpath = "//div[text()='Serial Number']")
 	WebElement serialNumber;
-	
 
 	@FindBy(xpath = "//label[@for='yaxis']/following::div/*/input[contains(@id, 'react-select-9-input')]")
 	WebElement yAxisInput;
-	
+
 	@FindBy(xpath = "//h1[text()='Automation']/parent::div[@class='Layout-title']/following::div/button[@title='Close Chart']")
 	WebElement deleteChart;
-	
+
 	@FindBy(xpath = "//h6[@class='list-group-item-heading' and text()='Automation']/parent::div")
 	WebElement widgetChart;
-	
+
 	@FindBy(xpath = "//h6[@class='list-group-item-heading' and text()='Automation']")
 	WebElement widgetChartText;
-	
+
 	@FindBy(xpath = "//h6[@class='list-group-item-heading' and text()='Automation']/parent::div/following::div/span")
 	WebElement deleteWidget;
-	
-	
+
 	@FindBy(xpath = "//button[text()='  Save & Close ']")
 	WebElement save_close;
-	
+
 	@FindBy(xpath = "//button[text()='  Save & Close ']")
 	WebElement cancelChart;
-	
+
 	@FindBy(xpath = "//button[@class = 'export-btn pdf-icon btn sub-rep-exp-sec']")
 	WebElement exportPDF;
-	
+
 	@FindBy(xpath = "//button[@class = 'export-btn btn sub-rep-exp-sec']")
 	WebElement exportPPT;
-	
+
 	public Discovery() {
 		PageFactory.initElements(driver, this);
 		testUtilObject = new TestUtil();
@@ -164,14 +164,18 @@ public class Discovery extends TestBase {
 	}
 
 	public void verifyAscending() throws InterruptedException {
+
 		secondColmun.click();
 		Thread.sleep(500);
+		String col_Name = getColmunName() ;
+		sortColumn = driver.findElements(By.xpath("//div[@role='row']/div[@col-id='" + col_Name + "']"));
+
 		ArrayList<String> obtainedList = new ArrayList<>();
 		if (sortColumn.size() > 0) {
 
 			for (WebElement we : sortColumn) {
 				if (!we.getText().trim().equalsIgnoreCase("")) {
-					if (!we.getText().trim().equalsIgnoreCase("Host Group")) {
+					if (!we.getText().trim().equalsIgnoreCase(col_Name)) {
 						obtainedList.add(we.getText());
 
 					}
@@ -193,12 +197,15 @@ public class Discovery extends TestBase {
 	public void verifyDescending() throws InterruptedException {
 		secondColmun.click();
 		Thread.sleep(500);
+		String col_Name = getColmunName() ;
+		sortColumn = driver.findElements(By.xpath("//div[@role='row']/div[@col-id='" + col_Name + "']"));
+
 		ArrayList<String> obtainedList = new ArrayList<>();
 		if (sortColumn.size() > 0) {
 
 			for (WebElement we : sortColumn) {
 				if (!we.getText().trim().equalsIgnoreCase("")) {
-					if (!we.getText().trim().equalsIgnoreCase("Host Group")) {
+					if (!we.getText().trim().equalsIgnoreCase(col_Name)) {
 						obtainedList.add(we.getText());
 					}
 				}
@@ -310,10 +317,10 @@ public class Discovery extends TestBase {
 				"Add Chart popup");
 
 	}
+
 	public void AddchartWindow() throws InterruptedException {
 		popupAddChart.click();
-		Assert.assertTrue(labelChartName.size() > 0,
-				"Add Chart Creation Window");
+		Assert.assertTrue(labelChartName.size() > 0, "Add Chart Creation Window");
 		chartName.sendKeys("Automation");
 		selectXaxis.click();
 		serialNumber.click();
@@ -321,16 +328,19 @@ public class Discovery extends TestBase {
 		Thread.sleep(500);
 		yAxisInput.sendKeys("Host Group");
 		yAxisInput.sendKeys(Keys.TAB);
-	//	hostGroup.click();
+		// hostGroup.click();
 		Assert.assertTrue(driver.findElements(By.xpath("//div[@class='add-chart-disp']")).size() > 0,
 				"Chart Display on the right side of window");
-	//	Assert.assertEquals("Chart Created Successfully", messageBox.getText().trim());
+		// Assert.assertEquals("Chart Created Successfully",
+		// messageBox.getText().trim());
 		Thread.sleep(500);
-		Assert.assertTrue(driver.findElements(By.xpath("//div[@class='Layout-title']/h1[text()='Automation']")).size() > 0,
+		Assert.assertTrue(
+				driver.findElements(By.xpath("//div[@class='Layout-title']/h1[text()='Automation']")).size() > 0,
 				"added chart should be shown as last position");
-		//save_close.click();
+		// save_close.click();
 		cancelChart.click();
 	}
+
 	public void removeChart() throws InterruptedException {
 		Thread.sleep(1000);
 
@@ -338,38 +348,50 @@ public class Discovery extends TestBase {
 		js.executeScript("window.scrollBy(0,-250)");
 		testUtilObject.waitforElementClickable(deleteChart);
 		deleteChart.click();
-		Assert.assertTrue(driver.findElements(By.xpath("//div[@class='Layout-title']/h1[text()='Automation']")).size() <= 0,
+		Assert.assertTrue(
+				driver.findElements(By.xpath("//div[@class='Layout-title']/h1[text()='Automation']")).size() <= 0,
 				"added chart should be removed");
 	}
+
 	public void verifyPickWidget() {
 		addChart.click();
 		Assert.assertEquals("AUTOMATION", widgetChartText.getText().trim());
-	
 
 	}
 
 	public void addChartFromWidget() {
 		widgetChart.click();
-		System.out.println(driver.findElements(By.xpath("//div[@class='Layout-title']/h1[text()='Automation']")).size());
-		Assert.assertTrue(driver.findElements(By.xpath("//div[@class='Layout-title']/h1[text()='Automation']")).size() > 0,
+		System.out
+				.println(driver.findElements(By.xpath("//div[@class='Layout-title']/h1[text()='Automation']")).size());
+		Assert.assertTrue(
+				driver.findElements(By.xpath("//div[@class='Layout-title']/h1[text()='Automation']")).size() > 0,
 				"added chart should be shown as last position");
 		deleteChart.click();
-	//	addChart.click();
-	//	deleteWidget.click();
+		// addChart.click();
+		// deleteWidget.click();
 
 	}
+
 	public void exportToPDF() {
 		exportPDF.click();
 		Assert.assertEquals("PDF exported successfully", messageBox.getText().trim());
 		testUtilObject.waitforElementDisappear(messageBox);
-	
 
 	}
+
 	public void exportToPPTX() {
 		exportPPT.click();
 		Assert.assertEquals("PPTX exported successfully", messageBox.getText().trim());
 		testUtilObject.waitforElementDisappear(messageBox);
-	
+
+	}
+
+	public String getColmunName() {
+		hideColumn.click();
+		String secondColmunName = driver.findElement(By.xpath("(//span[@class='ag-column-select-column-label'])[2]"))
+				.getText();
+		hideColumn.click();
+		return secondColmunName;
 
 	}
 }

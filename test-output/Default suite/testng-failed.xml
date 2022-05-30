@@ -7,7 +7,11 @@
         <methods>
           <include name="verifyWidget"/>
           <include name="tearDown"/>
+          <include name="exportPDF"/>
+          <include name="removeChart"/>
           <include name="setUp"/>
+          <include name="addChartUsngWidget"/>
+          <include name="exportPPPT"/>
         </methods>
       </class> <!-- com.zenfradashboard.testcases.DiscoveryTest -->
     </classes>

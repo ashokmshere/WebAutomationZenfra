@@ -1,65 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="14" passed="12" failed="0" skipped="0">
+<testng-results ignored="2" total="16" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-29T21:42:24 IST" name="Default suite" finished-at="2022-05-29T21:46:10 IST" duration-ms="226308">
+  <suite started-at="2022-05-30T09:47:53 IST" name="Default suite" finished-at="2022-05-30T09:54:03 IST" duration-ms="370004">
     <groups>
     </groups>
-    <test started-at="2022-05-29T21:42:24 IST" name="Default test" finished-at="2022-05-29T21:46:10 IST" duration-ms="226308">
+    <test started-at="2022-05-30T09:47:53 IST" name="Default test" finished-at="2022-05-30T09:54:03 IST" duration-ms="370004">
       <class name="com.zenfradashboard.testcases.DiscoveryTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.zenfradashboard.testcases.DiscoveryTest@434a63ab]" started-at="2022-05-29T21:42:24 IST" name="setUp" finished-at="2022-05-29T21:42:47 IST" duration-ms="22722" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:47:53 IST" name="setUp" finished-at="2022-05-30T09:48:13 IST" duration-ms="19987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyReportLoading()[pri:1, instance:com.zenfradashboard.testcases.DiscoveryTest@434a63ab]" started-at="2022-05-29T21:42:47 IST" name="verifyReportLoading" finished-at="2022-05-29T21:43:55 IST" duration-ms="68556" status="PASS">
+        <test-method signature="verifyReportLoading()[pri:1, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:48:13 IST" name="verifyReportLoading" finished-at="2022-05-30T09:49:33 IST" duration-ms="79586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyReportLoading -->
-        <test-method signature="verifyToatalColmun()[pri:2, instance:com.zenfradashboard.testcases.DiscoveryTest@434a63ab]" started-at="2022-05-29T21:43:55 IST" name="verifyToatalColmun" finished-at="2022-05-29T21:43:56 IST" duration-ms="71" status="PASS">
+        <test-method signature="verifyToatalColmun()[pri:2, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:49:33 IST" name="verifyToatalColmun" finished-at="2022-05-30T09:49:33 IST" duration-ms="165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyToatalColmun -->
-        <test-method signature="verifyPinnedState()[pri:3, instance:com.zenfradashboard.testcases.DiscoveryTest@434a63ab]" started-at="2022-05-29T21:43:56 IST" name="verifyPinnedState" finished-at="2022-05-29T21:43:56 IST" duration-ms="58" status="PASS">
+        <test-method signature="verifyPinnedState()[pri:3, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:49:33 IST" name="verifyPinnedState" finished-at="2022-05-30T09:49:33 IST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPinnedState -->
-        <test-method signature="verifyColSortAscending()[pri:4, instance:com.zenfradashboard.testcases.DiscoveryTest@434a63ab]" started-at="2022-05-29T21:43:56 IST" name="verifyColSortAscending" finished-at="2022-05-29T21:43:57 IST" duration-ms="1434" status="PASS">
+        <test-method signature="verifyColSortAscending()[pri:4, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:49:33 IST" name="verifyColSortAscending" finished-at="2022-05-30T09:49:36 IST" duration-ms="2738" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyColSortAscending -->
-        <test-method signature="verifyColSortDecending()[pri:5, instance:com.zenfradashboard.testcases.DiscoveryTest@434a63ab]" started-at="2022-05-29T21:43:57 IST" name="verifyColSortDecending" finished-at="2022-05-29T21:43:58 IST" duration-ms="1340" status="PASS">
+        <test-method signature="verifyColSortDecending()[pri:5, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:49:36 IST" name="verifyColSortDecending" finished-at="2022-05-30T09:49:39 IST" duration-ms="2786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyColSortDecending -->
-        <test-method signature="verifyFilterRecords()[pri:6, instance:com.zenfradashboard.testcases.DiscoveryTest@434a63ab]" started-at="2022-05-29T21:43:58 IST" name="verifyFilterRecords" finished-at="2022-05-29T21:44:00 IST" duration-ms="1168" status="PASS">
+        <test-method signature="verifyFilterRecords()[pri:6, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:49:39 IST" name="verifyFilterRecords" finished-at="2022-05-30T09:49:40 IST" duration-ms="1276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFilterRecords -->
-        <test-method signature="hideColmunsAndVerify()[pri:7, instance:com.zenfradashboard.testcases.DiscoveryTest@434a63ab]" started-at="2022-05-29T21:44:00 IST" name="hideColmunsAndVerify" finished-at="2022-05-29T21:45:33 IST" duration-ms="93910" status="PASS">
+        <test-method signature="hideColmunsAndVerify()[pri:7, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:49:40 IST" name="hideColmunsAndVerify" finished-at="2022-05-30T09:51:14 IST" duration-ms="94066" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hideColmunsAndVerify -->
-        <test-method signature="verifyExcelExportOptions()[pri:8, instance:com.zenfradashboard.testcases.DiscoveryTest@434a63ab]" started-at="2022-05-29T21:45:33 IST" name="verifyExcelExportOptions" finished-at="2022-05-29T21:45:34 IST" duration-ms="581" status="PASS">
+        <test-method signature="verifyExcelExportOptions()[pri:8, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:51:14 IST" name="verifyExcelExportOptions" finished-at="2022-05-30T09:51:15 IST" duration-ms="595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyExcelExportOptions -->
-        <test-method signature="exportDataAsExcel()[pri:9, instance:com.zenfradashboard.testcases.DiscoveryTest@434a63ab]" started-at="2022-05-29T21:45:34 IST" name="exportDataAsExcel" finished-at="2022-05-29T21:45:38 IST" duration-ms="3824" status="PASS">
+        <test-method signature="exportDataAsExcel()[pri:9, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:51:15 IST" name="exportDataAsExcel" finished-at="2022-05-30T09:51:17 IST" duration-ms="2741" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exportDataAsExcel -->
-        <test-method signature="removeChart()[pri:12, instance:com.zenfradashboard.testcases.DiscoveryTest@434a63ab]" started-at="2022-05-29T21:45:38 IST" name="removeChart" finished-at="2022-05-29T21:46:09 IST" duration-ms="31294" status="PASS">
+        <test-method signature="removeChart()[pri:12, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:51:17 IST" name="removeChart" finished-at="2022-05-30T09:51:49 IST" duration-ms="31721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeChart -->
-        <test-method signature="verifyWidget()[pri:13, instance:com.zenfradashboard.testcases.DiscoveryTest@434a63ab]" started-at="2022-05-29T21:46:09 IST" name="verifyWidget" finished-at="2022-05-29T21:46:10 IST" duration-ms="370" status="PASS">
+        <test-method signature="verifyWidget()[pri:13, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:51:49 IST" name="verifyWidget" finished-at="2022-05-30T09:51:49 IST" duration-ms="487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWidget -->
-        <test-method signature="addChartUsngWidget()[pri:14, instance:com.zenfradashboard.testcases.DiscoveryTest@434a63ab]" started-at="2022-05-29T21:46:10 IST" name="addChartUsngWidget" finished-at="2022-05-29T21:46:10 IST" duration-ms="915" status="PASS">
+        <test-method signature="addChartUsngWidget()[pri:14, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:51:49 IST" name="addChartUsngWidget" finished-at="2022-05-30T09:51:50 IST" duration-ms="975" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addChartUsngWidget -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenfradashboard.testcases.DiscoveryTest@434a63ab]" started-at="2022-05-29T21:46:10 IST" name="tearDown" finished-at="2022-05-29T21:46:10 IST" duration-ms="1" status="PASS">
+        <test-method signature="exportPPPT()[pri:14, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:51:50 IST" name="exportPPPT" finished-at="2022-05-30T09:52:57 IST" duration-ms="66830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exportPPPT -->
+        <test-method signature="exportPDF()[pri:15, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:52:57 IST" name="exportPDF" finished-at="2022-05-30T09:54:02 IST" duration-ms="64718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exportPDF -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zenfradashboard.testcases.DiscoveryTest@2805d709]" started-at="2022-05-30T09:54:02 IST" name="tearDown" finished-at="2022-05-30T09:54:03 IST" duration-ms="1128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
